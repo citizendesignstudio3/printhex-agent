@@ -3,24 +3,17 @@
 #define MyAppExeName "agent.exe"
 
 [Setup]
-AppName={#MyAppName}
-AppVersion={#MyAppVersion}
+AppName=PrintHex Agent
+AppVersion=2.5.3
 DefaultDirName={pf}\PrintHexAgent
 DefaultGroupName=PrintHex Agent
-
 OutputDir=Output
-OutputBaseFilename=PrintHexAgentSetup_{#MyAppVersion}
-
+OutputBaseFilename=PrintHexAgentSetup
 Compression=lzma
 SolidCompression=yes
-
-SetupIconFile=printhex.ico
 
 [Files]
 Source: "dist\agent.exe"; DestDir: "{app}"; Flags: ignoreversion
 
 [Icons]
-Name: "{autoprograms}\PrintHex Agent"; Filename: "{app}\agent.exe"
-
-[Run]
-Filename: "{app}\agent.exe"; Flags: nowait postinstall skipifsilent
+Name: "{group}\PrintHex Agent"; Filename: "{app}\agent.exe"
