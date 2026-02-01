@@ -1,0 +1,38 @@
+name: Build PrintHex Agent Installer
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install Dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install pyinstaller
+
+      - name: Build Agent EXE
+        run: pyinstaller --onefile --noconsole agent.py
+
+      - name: Install Inno Setup
+        run: choco install innosetup -y
+
+      - name: Build Installer
+        run: iscc installer.iss
+
+      - name: Upload Installer to Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: Output/*.exe
