@@ -1,9 +1,19 @@
-dist/
-build/
+# Python
+__pycache__/
+*.pyc
+
+# Virtual Environment
 venv/
 .venv/
-__pycache__/
+
+# PyInstaller
+dist/
+build/
 *.spec
+
+# Logs
 *.log
-*.exe
-_internal/
+
+# Windows
+Thumbs.db
+.DS_Store
