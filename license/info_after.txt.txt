@@ -1,0 +1,13 @@
+INSTALLATION SUCCESSFUL!
+
+Next Steps to Get Started:
+
+Launch the Agent: Double-click the PrintHex Agent icon on your Desktop.
+
+Authentication: Enter your unique Device ID and Secret Token provided in your PrintHex Admin Dashboard.
+
+Background Operation: Once configured, the application will automatically minimize to the System Tray (near the clock). It will continue to monitor your machine in the background.
+
+Auto-Start: The agent is configured to start automatically whenever your computer is turned on.
+
+Technical Support: For any assistance, please contact us at support@printhex.in or visit our help portal.

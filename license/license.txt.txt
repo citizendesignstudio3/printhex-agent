@@ -1,0 +1,13 @@
+PRINTHEX AGENT - END USER LICENSE AGREEMENT 
+
+1. OWNERSHIP: This software is the exclusive property of PrintHex India. All rights, titles, and interests in the software remain with PrintHex India.
+
+2. GRANT OF LICENSE: This license is granted only to authorized vendors and partners for the purpose of machine monitoring.
+
+3. RESTRICTIONS: You shall not decompile, reverse-engineer, or modify the software. Unauthorized distribution or sale of this software is strictly prohibited.
+
+4. DATA USAGE: The software collects real-time status data from your connected machines (Flex, Laser, and Konica printers) to facilitate remote monitoring and reporting.
+
+5. LIMITATION OF LIABILITY: The software is provided "As-Is." PrintHex India shall not be liable for any direct or indirect hardware failures or business interruptions resulting from the use of this software.
+
+By installing this application, you agree to be bound by these terms.
